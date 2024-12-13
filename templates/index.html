@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Personality Prediction</title>
+</head>
+<body>
+    <h1>Enter Customer Data</h1>
+    <form action="/predict" method="POST">
+        <label for="annual_income">Annual Income (k$):</label><br>
+        <input type="text" id="annual_income" name="annual_income"><br><br>
+        
+        <label for="spending_score">Spending Score (1-100):</label><br>
+        <input type="text" id="spending_score" name="spending_score"><br><br>
+        
+        <input type="submit" value="Predict"><br><br>
+    </form>
+    
+    {% if prediction %}
+        <h2>{{ prediction }}</h2>
+    {% endif %}
+</body>
+</html>
