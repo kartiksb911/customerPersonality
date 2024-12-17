@@ -3,17 +3,17 @@
 This project performs customer segmentation based on annual income and spending score using the KMeans clustering algorithm. It involves multiple stages: data ingestion, data transformation, model training, and predictions. The model is deployed using a Flask web application that allows users to make predictions through both a web interface and API.
 
 ## Steps Involved
-* *Data Ingestion*:The DataIngestion module reads the raw data from the CSV file and performs basic preprocessing by dropping unnecessary columns.
-* *DataTransformation*:The DataTransformation module scales the features (Annual Income and Spending Score) using StandardScaler.
-* *ModelTrainer*:The ModelTrainer module trains the KMeans clustering model, performing clustering with 5 clusters. It also calculates the silhouette score to evaluate the model’s performance.
-* *Web Application (Flask)*:A simple Flask web application is used to interact with the trained model. Users can input their annual income and spending score, and the app will predict the customer cluster based on the trained model.
+* **Data Ingestion**:The DataIngestion module reads the raw data from the CSV file and performs basic preprocessing by dropping unnecessary columns.
+* **DataTransformation**:The DataTransformation module scales the features (Annual Income and Spending Score) using StandardScaler.
+* **ModelTrainer**:The ModelTrainer module trains the KMeans clustering model, performing clustering with 5 clusters. It also calculates the silhouette score to evaluate the model’s performance.
+* **Web Application (Flask)**:A simple Flask web application is used to interact with the trained model. Users can input their annual income and spending score, and the app will predict the customer cluster based on the trained model.
 * **Routes**:
 * /: Home route that displays the index page (index.html).
 * /predict: POST route where users can input their data to get cluster predictions.
 * /predict_api: API route that accepts a JSON object with the data and returns the prediction.
-* *Deployed*: Deployed the app to `Render` for easy access and hosting.
-*  *Model Prediction*: The model is saved in the `artifacts/model.pkl` file, and when a user submits data through the web app, the Flask app loads the model and uses it to predict the customer cluster.
-* *Saving Model and Scaler*:Both the trained KMeans model and the `StandardScaler` used for preprocessing are saved to disk (model.pkl and scaler.pkl), ensuring they can be reused in future predictions without retraining.
+* **Deployed**: Deployed the app to `Render` for easy access and hosting.
+*  **Model Prediction**: The model is saved in the `artifacts/model.pkl` file, and when a user submits data through the web app, the Flask app loads the model and uses it to predict the customer cluster.
+* **Saving Model and Scaler**:Both the trained KMeans model and the `StandardScaler` used for preprocessing are saved to disk (model.pkl and scaler.pkl), ensuring they can be reused in future predictions without retraining.
 ## Technology Used
 * machine learning model-->`KMeans`
 * web framework-->`Flask` and `html`
@@ -72,9 +72,11 @@ https://client-cluster.onrender.com
 * Users can input data through the Flask application.
 * The CustomData class formats the input data, and the PredictPipeline class predicts the cluster.
 * The result is displayed in the web interface or returned as a JSON response.
-## Web App
+### Web App
 ![Image Alt]()
-## Deployment
+### Deployment
+![Image Alt]()
+### POSTMAN
 ![Image Alt]()
 ## 🔗 Links
 [![Github](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/kartiksb911)
