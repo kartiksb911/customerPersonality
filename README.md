@@ -73,11 +73,11 @@ https://client-cluster.onrender.com
 * The CustomData class formats the input data, and the PredictPipeline class predicts the cluster.
 * The result is displayed in the web interface or returned as a JSON response.
 ### Web App
-![Image Alt]()
+![Image Alt](https://github.com/kartiksb911/customerPersonality/blob/24b651f5b01cd2e9f16c31792d6c1d188f0fb54b/image/Screenshot%20(117).png)
 ### Deployment
-![Image Alt]()
+![Image Alt](https://github.com/kartiksb911/customerPersonality/blob/24b651f5b01cd2e9f16c31792d6c1d188f0fb54b/image/Screenshot%20(116).png)
 ### POSTMAN
-![Image Alt]()
+![Image Alt](https://github.com/kartiksb911/customerPersonality/blob/24b651f5b01cd2e9f16c31792d6c1d188f0fb54b/image/Screenshot%20(115).png)
 ## 🔗 Links
 [![Github](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/kartiksb911)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kartik-bhardwaj-07b7282b7/)
